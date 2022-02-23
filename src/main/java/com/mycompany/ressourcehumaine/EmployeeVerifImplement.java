@@ -20,7 +20,7 @@ public class EmployeeVerifImplement implements UserVerifInterface{
 
     @Override
     public boolean verifVide(String chaine) {
-       return !chaine.isEmpty();
+       return !chaine.isEmpty(); // ! = not
        //equivalent
 //       if(chaine.isEmpty())
 //           return false;
@@ -30,7 +30,10 @@ public class EmployeeVerifImplement implements UserVerifInterface{
 
     @Override
     public boolean verifLongueur(String password) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return password.length()>8; // true si expression correcte / false sinon
+
+
+
     }
 
 }
