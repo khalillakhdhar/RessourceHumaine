@@ -39,7 +39,7 @@
                   </Group>
                   <Component id="jLabel2" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="t" pref="103" max="32767" attributes="0"/>
                   <Component id="em" pref="103" max="32767" attributes="0"/>
