@@ -15,7 +15,7 @@ public class Connect {
     String dbURL = "jdbc:mysql://localhost:3306/grh";
     String username = "root";
     String password = "";
-    static Connection conn;
+   public static Connection conn;
 
     public Connect() {
         try
