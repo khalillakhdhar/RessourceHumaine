@@ -6,6 +6,7 @@ package crud;
 
 import com.mycompany.ressourcehumaine.Employee;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
 /**
@@ -88,5 +89,29 @@ public Connect c=new Connect();
             JOptionPane.showConfirmDialog(null, "supression impossible");
         
         }    }
+    public void showUsers(String nom)
+    {
+    try
+    {
+    String sql = "SELECT * FROM `employee` WHERE nom=?"; // retourne un tableau
+    PreparedStatement pst = Connect.conn.prepareStatement(sql);
+    pst.setString(1, nom);
+    // fin de préparation
+ResultSet rs=pst.executeQuery();
+while(rs.next())
+{
+System.out.print(rs.getInt("id")+" prenom"+rs.getString("prenom"));
+
+}
+    
+    
+    }
+    catch(Exception ex)
+    {
+    
+    }
+    
+    
+    }
     
 }

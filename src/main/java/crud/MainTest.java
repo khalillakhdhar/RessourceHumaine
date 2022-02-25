@@ -22,7 +22,8 @@ public class MainTest {
         CrudUser cru=new CrudUser();
         em.setId(2);
         //cru.updateEmployee(em);
-        cru.deleteEmployee(2);
+       // cru.deleteEmployee(2);
+        cru.showUsers("khaled");
         //cru.createEmployee(em);
         
     }
