@@ -18,9 +18,12 @@ public class MainTest {
     public static void main(String[] args) {
         // TODO code application logic here
        // Connect c=new Connect();
-        Employee em=new Employee("t","x","y", "z", 10, 2022, "a", "20999888");
+        Employee em=new Employee("admin","admin","y", "z", 10, 2022, "a", "20999888");
         CrudUser cru=new CrudUser();
-        cru.createEmployee(em);
+        em.setId(2);
+        //cru.updateEmployee(em);
+        cru.deleteEmployee(2);
+        //cru.createEmployee(em);
         
     }
     
