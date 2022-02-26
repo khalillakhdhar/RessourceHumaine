@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  *
  * @author khali
  */
-public class CrudUser implements CrudInterface {
+public class CrudUser implements CrudInterface  {
 public Connect c=new Connect();
 
     @Override
@@ -47,6 +47,9 @@ public Connect c=new Connect();
     public void updateEmployee(Employee em) {
  try
         {
+            int tab[ ] = new int[4];
+            int tabs[ ];
+     
         
            // préparation
                 String sql = "UPDATE `employee` SET `nom`=?,`prenom`=?,`email`=?,`mdp`=?,`age`=?, `recrutement`=?, `grade`=?, `tel`=? WHERE `id`=?"; // declaration de query
